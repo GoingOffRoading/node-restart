@@ -1,6 +1,6 @@
 # node-restart
 
-This repository contains a bash installer that schedules a Ubuntu 20.04 LTS node to reboot at midnight every day.
+I have a few older nodes in my home Kuberentes cluster that are pegged at 100% CPU utilization 24/7, and are starting to struggle a little bit.  Instead of digging through hardware logs to find out why the nodes occasionally crash, I took to easy way out and decided to just restart the nodes daily.  
 
 ## Files
 
