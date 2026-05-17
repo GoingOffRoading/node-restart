@@ -18,11 +18,20 @@ That means the machine will restart every day at `00:00`.
 
 ## Install
 
-1. Copy this repository to the node.
+1. Download the installer script to the node.
 2. Make the script executable.
 3. Run it as `root` or with `sudo`.
 
 ```bash
+curl -fsSL https://raw.githubusercontent.com/GoingOffRoading/node-restart/refs/heads/main/install-daily-node-restart.sh -o install-daily-node-restart.sh
+chmod +x install-daily-node-restart.sh
+sudo ./install-daily-node-restart.sh
+```
+
+If `curl` is not installed, you can use `wget` instead:
+
+```bash
+wget -O install-daily-node-restart.sh https://raw.githubusercontent.com/GoingOffRoading/node-restart/refs/heads/main/install-daily-node-restart.sh
 chmod +x install-daily-node-restart.sh
 sudo ./install-daily-node-restart.sh
 ```
