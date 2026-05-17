@@ -2,6 +2,10 @@
 
 I have a few older nodes in my home Kuberentes cluster that are pegged at 100% CPU utilization 24/7, and are starting to struggle a little bit.  Instead of digging through hardware logs to find out why the nodes occasionally crash, I took to easy way out and decided to just restart the nodes daily.  
 
+Why am I not cordoning, draining the node?
+
+Nothing critical runs on these nodes so terminating the pods and restarting the node is fine.
+
 ## Files
 
 - `install-daily-node-restart.sh`: installs a cron job at `/etc/cron.d/node-daily-restart`
